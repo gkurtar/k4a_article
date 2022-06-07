@@ -1,0 +1,66 @@
+39  ./k4arecorder.exe
+   40  ./k4arecorder.exe  --list
+   41  ./k4arecorder.exe  -c 3072p -d WFOV_UNBINNED --imu OFF -l 5 /c/tmp/out8.mkv
+   42  ./k4arecorder.exe  -c 3072p -d WFOV_UNBINNED --imu OFF -l 3 /c/tmp/tez_d_wfov_unb.mkv
+   43  ./k4arecorder.exe  -c 3072p -d WFOV_UNBINNED --imu OFF -l 3 /c/tmp/tez_d_wfov_unb.mkv
+   44  ./k4arecorder.exe  -c 3072p -d WFOV_UNBINNED --imu OFF -l 3 /c/tmp/tez_d_wfov_unb.mkv
+   45  ./k4arecorder.exe  -c 3072p -d NFOV_UNBINNED --imu OFF -l 3 /c/tmp/tez_d_nfov_unb.mkv
+   46  ./k4arecorder.exe  -c 3072p -d NFOV_UNBINNED --imu OFF -l 10 /c/tmp/tez_d_nfov_unb.mkv
+   47  ./k4arecorder.exe  -c 3072p -d NFOV_UNBINNED --imu OFF -l 10 /c/tmp/tez_d_nfov_unb_moving.mkv
+   48  ./k4arecorder.exe  -c 3072p -d NFOV_UNBINNED --imu OFF -l 90 /c/tmp/tez_d_nfov_unb_moving.mkv
+   49  ./k4arecorder.exe  -c 3072p -d NFOV_UNBINNED --imu OFF -l 10 /c/tmp/tez_d_nfov_unb_moving.mkv
+   50  ./k4arecorder.exe  -c 3072p -d NFOV_UNBINNED --imu OFF -l 90 /c/tmp/tez_d_nfov_unb_moving.mkv
+   51  ./k4arecorder.exe  -c 3072p -d NFOV_UNBINNED --imu OFF -l 30 /c/tmp/tez_d_nfov_unb_moving.mkv
+   52  ./k4arecorder.exe  -c 3072p -d NFOV_UNBINNED --imu OFF -l 25 /c/tmp/tez_d_nfov_unb_moving.mkv
+   53  ./k4arecorder.exe  -c 3072p -d NFOV_UNBINNED --imu OFF -l 20 /c/tmp/tez_d_nfov_unb_moving.mkv
+   54  ./k4arecorder.exe  -c 3072p -d WFOV_UNBINNED --imu OFF -l 20 /c/tmp/tez_d_wfov_unb_moving.mkv
+   55  ./k4arecorder.exe  -c 3072p -d WFOV_UNBINNED --imu OFF -l 15 /c/tmp/tez_d_wfov_unb_moving.mkv
+   56  ./k4arecorder.exe  --list
+   57  ./k4arecorder.exe --help
+   58  ./k4arecorder.exe  -c 3072p -d WFOV_2x2BINNED --imu OFF -l 15 /c/tmp/tez_w2x2b_moving.mkv
+   59  ./k4arecorder.exe  -c 3072p -d NFOV_2x2BINNED --imu OFF -l 15 /c/tmp/tez_n2x2b_moving.mkv
+   60  ./k4arecorder.exe --help
+
+
+./mkvextract.exe -h
+   38  ./mkvextract.exe /c/tmp/output2.mkv
+   39  ./mkvextract.exe /c/tmp/output2.mkv tracks 0:color.mkv 1:depth.mkv 2:ir.mkv 3:imu.mkv
+   40  ./mkvextract.exe /c/tmp/output2.mkv tracks 0:color.mkv 1:depth.mkv 2:ir.mkv
+   41  ls
+   42  mkvinfo
+   43  mkvinfo.exe
+   44  ./mkvinfo.exe
+   45  cd ..
+   46  ls
+   47  cd ffmpeg-N-101865-g3e16d1c8a6-win64-gpl-shared/
+   48  ls
+   49  cd bin/
+   50  ls
+   51  ffmpeg -i /c/tmp/output2.mkv -map 0:1 -vsync 0 depth%04d.png
+   52  ./ffmpeg -i /c/tmp/output2.mkv -map 0:1 -vsync 0 depth%04d.png
+   53  l
+   54  ll
+   55  ./ffmpeg -i /c/tmp/output2.mkv -map 0:2 -vsync 0 depth%04d.png
+   56  ./ffmpeg -i /c/tmp/tez_d_wfov_unb.mkv -map 0:2 -vsync 0 depth%04d.png
+   57  ls
+   58  ./ffmpeg -i /c/tmp/tez_d_wfov_unb.mkv -map 0:1 -vsync 0 ir%04d.png
+   59  ls
+   60  ./ffmpeg -i /c/tmp/tez_d_wfov_unb.mkv -map 0:0 -vsync 0 col%04d.png
+   
+   ffmpeg.exe -i out8.mkv -vf "select=eq(n\, 10)" -map 0:2 -vframes 1 ir3.png
+   
+   61  ls
+   62  ./ffplay
+   63  ./ffplay /c/tmp/tez_d_wfov_unb.mkv
+   64  ./ffplay /c/tmp/tez_d_wfov_unb.mkv
+   65  ./ffplay --help
+   66  ./ffplay --help | more
+   67  ./ffplay --help | more
+   68  ./ffplay -formats
+   69  ./ffplay -formats | more
+   70  ./ffplay -formats | more
+   71  ./ffplay --help | more
+   72  ./ffplay -colors
+   73  ./ffplay -colors | more
+   74  ./ffplay --help | mor
+   75  ./ffplay --help | more
