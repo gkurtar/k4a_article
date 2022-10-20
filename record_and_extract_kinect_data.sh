@@ -1,4 +1,8 @@
 
+
+#export PATH=$PATH:"/c/Program Files/Azure Kinect SDK v1.4.1/tools"
+#export PATH=$PATH:"/c/Programs/ffmpeg-N-101865-g3e16d1c8a6-win64-gpl-shared/bin"
+
 sleep 1
 echo BASLIYOR
 sleep 1
